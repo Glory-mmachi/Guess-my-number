@@ -39,6 +39,9 @@ check.addEventListener("click", function () {
     displayMessage(guess > secretNumber ? `Too high😝😝` : `Too low😥😥`);
     score--;
     scoreNum.textContent = score;
+  } else {
+    displayMessage('You lost the game ☹☹');
+    document.querySelector('.score').textContent = 0;
   }
 });
 
